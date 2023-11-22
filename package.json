@@ -1,0 +1,17 @@
+{
+  "name": "base-site",
+  "version": "1.0.0",
+  "description": "potato",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.23.0"
+  },
+  "dependencies": {
+    "eslint-plugin-html": "^6.1.2"
+  }
+}
