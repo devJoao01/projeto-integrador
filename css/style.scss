@@ -317,6 +317,19 @@ body {
     background: $bg-body;
     @include transition(left, 0.5, ease);
     @include selectionColor(rgba($color-1, 0.3));
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
 }
 
 //--Wrapper--------------------------------------//
@@ -381,7 +394,7 @@ body {
     font-size: 28px;
     color: $color-1;
     font-weight: 700;
-    padding: 15px 0;
+    margin: 20px 0;
     text-transform: uppercase;
 
     &.white {
@@ -883,7 +896,7 @@ header {
             transition: none;
 
             img {
-                width: 100px;
+                width: 70px;
                 height: auto;
                 display: block;
                 transition: none;
@@ -1087,7 +1100,7 @@ header {
 
             .logo {
                 img {
-                    width: 80px;
+                    width: 40px;
                 }
             }
         }
@@ -1558,7 +1571,7 @@ footer {
 
             ul {
                 &.two-columns {
-                    column-count: 2;
+                    column-count: 1;
                     column-gap: 10px;
                 }
             }
@@ -1749,9 +1762,10 @@ footer {
             display: flex;
             align-items: center;
             justify-content: center;
-
+            margin-bottom: 30px;
             @include media-up(lg) {
                 display: block;
+                margin-bottom: 0;
             }
 
             img {
@@ -1767,6 +1781,14 @@ footer {
                     height: 400px;
                 }
             }
+        }
+
+        .title {
+            margin: 0 0 10px;
+        }
+
+        .text {
+            line-height: 29px;
         }
     }
 
@@ -1793,6 +1815,7 @@ footer {
                     box-shadow: inset 0 0 6px #dcdcdc;
                     border-radius: 3px;
                     background-color: #efefef;
+
                     .icon {
                         background-color: darken($color-1, 10%);
 
@@ -1831,10 +1854,16 @@ footer {
         }
     }
 
-    .portfolio{
+    .portfolio {
         background-color: #efefef;
         padding: 60px 0;
-        .title {
+        .row{
+            gap: 40px 0;
+            @include media-up(lg){
+                gap: 0;
+            }
+        }
+        .title {    
             line-height: 20px;
 
             span {
@@ -1853,34 +1882,41 @@ footer {
                 }
             }
         }
-        .card{
-            .card-thumb{
+
+        .card {
+            .card-thumb {
                 height: 400px;
-                iframe{
+
+                iframe {
                     height: 100%;
                     width: 100%;
                 }
-            }   
-            .card-body{
-                .content-iframe{
-                    .title{
-                        h2{
+            }
+
+            .card-body {
+                .content-iframe {
+                    .title {
+                        h2 {
                             color: #000;
                             font-weight: 700;
                             font-size: 16px;
-                            @include media-up(lg){
+
+                            @include media-up(lg) {
                                 font-size: 18px;
                             }
                         }
                     }
                 }
-                .visit{
+
+                .visit {
                     margin-top: 20px;
-                    a{
+
+                    a {
                         color: #000;
                         font-weight: 700;
-                        svg{
-                            margin-left:5px;
+
+                        svg {
+                            margin-left: 5px;
                             font-size: 15px;
                         }
                     }
@@ -1888,7 +1924,8 @@ footer {
             }
         }
     }
-    .rewiew{
+
+    .review {
         .title {
             line-height: 20px;
 
@@ -3863,8 +3900,8 @@ footer {
 }
 
 .structure {
-    margin: 90px 0 82px;
     position: relative;
+    margin: 0 0 90px;
 
     .swiper-button-container {
         position: relative;
@@ -3996,44 +4033,46 @@ footer {
             visibility: visible;
             position: relative;
             height: auto;
-      
+
             img {
-              transition: all 0.35s ease;
-              border-radius: 14px;
+                transition: all 0.35s ease;
+                border-radius: 14px;
             }
-      
+
             .card {
-              background-color: #83D7BF;
-              height: 100%;
-              border: none;
-      
-              .content {
-                padding: 26px;
-      
-                p {
-                  color: #fff;
-                  line-height: 12px;
-                  font-size: 12px;
-      
-                  @include media-up(lg) {
-                    font-size: 14px;
-                    line-height: 17px;
-                  }
+                background-color: $color-1;
+                height: 100%;
+                border: none;
+
+                .content {
+                    padding: 60px 26px;
+                    @include media-up(lg){
+                        padding: 26px;
+                    }
+                    p {
+                        color: #fff;
+                        line-height: 12px;
+                        font-size: 12px;
+
+                        @include media-up(lg) {
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+                    }
+
+                    .autor {
+                        font-size: 15px;
+                        font-weight: 600;
+                        margin-top: 11px;
+
+                        @include media-up(lg) {
+                            font-size: 17px;
+                            margin-top: 17px;
+                        }
+                    }
                 }
-      
-                .autor {
-                  font-size: 15px;
-                  font-weight: 600;
-                  margin-top: 11px;
-      
-                  @include media-up(lg) {
-                    font-size: 17px;
-                    margin-top: 17px;
-                  }
-                }
-              }
             }
-          }
+        }
     }
 
     .swiper-pagination {

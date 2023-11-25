@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Site, Base">
-    <title>Site Base</title>
+    <title>Projeto Integrador</title>
     <link rel="apple-touch-icon" sizes="57x57" href="imgs/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="imgs/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="imgs/favicon/apple-icon-72x72.png">
@@ -44,13 +44,15 @@
             principal</button>
         <nav class="navbar navbar-expand compensate-for-scrollbar">
             <div class="container">
-                <a href="index.php" class="logo">
+                <a href="#" class="logo">
                     <img srcset="imgs/logo.png, imgs/logo-2x.png 2x" src="imgs/logo-2x.png" alt="Site Base" />
                 </a>
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Example</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#about" class="scrollTo">SOBRE</a></li>
+                    <li><a href="#skills" class="scrollTo">HABILIDADES</a></li>
+                    <li><a href="#technologies" class="scrollTo">TECNOLOGIAS</a></li>
+                    <li><a href="#works" class="scrollTo">TRABALHOS RECENTES</a></li>
+                    <li><a href="#reviews" class="scrollTo">REVIEWS</a></li>
                 </ul>
             </div>
         </nav>
@@ -64,27 +66,11 @@
         </div>
         <div id="sidebar-menu">
             <ul class="sidebar-nav" id="submenu-mobile">
-                <li><a href="banner-parallax.php">Banner Parallax</a></li>
-                <li><a href="page.php">Page Padrão</a></li>
-                <li><a href="partners.php">Parceiros</a></li>
-                <li><a href="contact.php">Contato</a></li>
-                <li>
-                    <a href="#sub-1" data-bs-toggle="collapse" data-target="#sub-1" class="btn-collapse collapsed">Todas
-                        as Categorias <i class="caret fas fa-angle-up"></i></a>
-                    <div class="collapse" id="sub-1">
-                        <div class="sub-menu">
-                            <a href="modal.php">Modal</a>
-                            <a href="newsletter.php">Newsletter</a>
-                            <a href="#k13" class="scrollTo">Scroll to Div</a>
-                            <a href="instagram.php">Instagram (Instafeed)</a>
-                            <a href="gradient.php">Gradiente</a>
-                            <a href="background.php">Background</a>
-                            <a href="video.php">Vídeo</a>
-                            <a href="sliders-galleries.php">Galeria de Sliders</a>
-                            <a href="single-slider-gallery.php">Slider de Galeria</a>
-                        </div>
-                    </div>
-                </li>
+                <li><a href="#about" class="scrollTo">SOBRE</a></li>
+                <li><a href="#skills" class="scrollTo">HABILIDADES</a></li>
+                <li><a href="#technologies" class="scrollTo">TECNOLOGIAS</a></li>
+                <li><a href="#works" class="scrollTo">TRABALHOS RECENTES</a></li>
+                <li><a href="#reviews" class="scrollTo">REVIEWS</a></li>
                 <li class="social">
                     <a href="https://facebook.com/" title="Facebook" target="_blank" rel="noreferrer"><i
                             class="fab fa-facebook-square"></i></a>
@@ -136,32 +122,34 @@
             </div>
         </div>
         <main id="home" tabindex="-1">
-            <section class="banner" role="banner">
-                <div class="swiper-banner swiper-container">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-wrapper">
-                        <a class="swiper-slide" href="#">
-                            <picture>
-                                <source media="(max-width: 767px)" data-srcset="imgs/banners/banner-01-m.jpg">
-                                <img data-src="imgs/banners/banner-01.jpg" class="img-cover swiper-lazy"
-                                    alt="Banner 01">
-                            </picture>
-                            <div class="swiper-lazy-preloader"></div>
-                        </a>
-                        <a class="swiper-slide" href="#">
-                            <picture>
-                                <source media="(max-width: 767px)" data-srcset="imgs/banners/banner-02-m.jpg">
-                                <img data-src="imgs/banners/banner-02.jpg" class="img-cover swiper-lazy"
-                                    alt="Banner 02">
-                            </picture>
-                            <div class="swiper-lazy-preloader"></div>
-                        </a>
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="row align-items-lg-center">
+                        <div class="col-lg-5">
+                            <div class="thumb">
+                                <img src="imgs/me.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="title">
+                                <h2>SOBRE</h2>
+                            </div>
+                            <div class="text">
+                                <p>João Vitor, estudante de TADS na Uniguairaca, atualmente atuo como Desenvolvedor
+                                    Frontend na K13 Agência Web. Minha jornada combina sólida formação acadêmica com
+                                    experiência prática, buscando constante aprimoramento para contribuir de maneira
+                                    inovadora no desenvolvimento web.</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>Cursando TADS</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </section>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <div class="container">
                     <div class="title">
                         <span>MINHAS</span>
@@ -227,41 +215,11 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="technologies" id="technologies">
                 <div class="container">
-                    <div class="row align-items-lg-center">
-                        <div class="col-lg-5">
-                            <div class="thumb">
-                                <img src="imgs/me.jpeg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="title">
-                                <h2>LOREM IPSUM</h2>
-                            </div>
-                            <div class="text">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore temporibus quasi,
-                                    molestiae quas maiores, fuga nesciunt porro commodi consectetur reiciendis sapiente
-                                    voluptates doloremque? Rem commodi nam, quos eum assumenda eius!
-                                    Odit eius earum explicabo similique veniam exercitationem cumque accusamus. Atque,
-                                    iusto? Libero consequuntur provident est exercitationem sit cupiditate accusamus
-                                    numquam minima porro corporis illo ducimus delectus hic possimus, voluptas eligendi.
-                                    Ut, nam? Voluptatibus blanditiis similique quo iure iusto illum, vitae animi ratione
-                                    maxime distinctio quam perspiciatis debitis alias accusamus magnam esse. Ipsa dolore
-                                    facilis fugit molestias eius quis, repellendus similique.
-                                    Commodi amet laboriosam nam in quis eligendi ea odio ipsa culpa? Accusantium id
-                                    reprehenderit dolore ipsa veritatis corporis, magnam maiores dignissimos magni nemo
-                                    cum maxime sequi voluptate itaque libero aliquam.
-                                    Commodi, soluta neque consequatur sed porro vitae quidem esse consequuntur
-                                    voluptatibus veniam incidunt vel possimus sunt repellendus molestias iste expedita
-                                    modi a aut nulla. Blanditiis reiciendis quisquam dolore fuga molestias.</p>
-                            </div>
-                        </div>
+                    <div class="title">
+                        <h2>SKILLS</h2>
                     </div>
-                </div>
-            </section>
-            <section class="technologies">
-                <div class="container">
                     <div class="col-lg-10 mx-auto">
                         <div class="row rows-cols-3">
                             <div class="col-lg-3 item">
@@ -332,7 +290,7 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio">
+            <section class="portfolio" id="works">
                 <div class="container">
                     <div class="title">
                         <span>MEUS</span>
@@ -355,9 +313,6 @@
                                                 ipsa, nemo culpa obcaecati mollitia eos, sit quos molestiae. Blanditiis,
                                                 at?</p>
                                         </div>
-                                        <div class="visit">
-                                            <a href="#">Go<i class="fas fa-chevron-right"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -377,9 +332,6 @@
                                                 repudiandae saepe ab odio adipisci omnis consequuntur, quis numquam
                                                 ipsa, nemo culpa obcaecati mollitia eos, sit quos molestiae. Blanditiis,
                                                 at?</p>
-                                        </div>
-                                        <div class="visit">
-                                            <a href="#">Go<i class="fas fa-chevron-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -401,9 +353,6 @@
                                                 ipsa, nemo culpa obcaecati mollitia eos, sit quos molestiae. Blanditiis,
                                                 at?</p>
                                         </div>
-                                        <div class="visit">
-                                            <a href="#">Go<i class="fas fa-chevron-right"></i></a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -411,7 +360,7 @@
                     </div>
                 </div>
             </section>
-            <section class="reviews">
+            <section class="reviews" id="reviews">
                 <div class="container">
                     <div class="row">
                         <div class="title">
@@ -428,23 +377,8 @@
                                     <div class="swiper-slide">
                                         <div class="card">
                                             <div class="content">
-                                                <p> Ut enim ad minim v exercitation ullamco laboris nisi aliquip ex
-                                                    ea commod consequat. Du irure dolor in reprehenderit i voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                                    sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                                    deserunt mollit anim id est laborum</p>
-                                                <p class="autor">Marcelo Joaquim</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card">
-                                            <div class="content">
-                                                <p> Ut enim ad minim v exercitation ullamco laboris nisi aliquip ex
-                                                    ea commod consequat. Du irure dolor in reprehenderit i voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                                    sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                                    deserunt mollit anim id est laborum</p>
+                                                <p>Seus projetos refletem uma combinação única de criatividade e
+                                                    funcionalidade</p>
                                                 <p class="autor">Usuario</p>
                                             </div>
                                         </div>
@@ -452,11 +386,7 @@
                                     <div class="swiper-slide">
                                         <div class="card">
                                             <div class="content">
-                                                <p> Ut enim ad minim v exercitation ullamco laboris nisi aliquip ex
-                                                    ea commod consequat. Du irure dolor in reprehenderit i voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                                    sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                                    deserunt mollit anim id est laborum</p>
+                                                <p>Traz uma abordagem fresca e atualizada para os projetos</p>
                                                 <p class="autor">Usuario</p>
                                             </div>
                                         </div>
@@ -464,83 +394,8 @@
                                     <div class="swiper-slide">
                                         <div class="card">
                                             <div class="content">
-                                                <p> Ut enim ad minim v exercitation ullamco laboris nisi aliquip ex
-                                                    ea commod consequat. Du irure dolor in reprehenderit i voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                                    sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                                    deserunt mollit anim id est laborum</p>
-                                                <p class="autor">Usuario</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card">
-                                            <div class="content">
-                                                <p> Ut enim ad minim v exercitation ullamco laboris nisi aliquip ex
-                                                    ea commod consequat. Du irure dolor in reprehenderit i voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                                    sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                                    deserunt mollit anim id est laborum</p>
-                                                <p class="autor">Usuario</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card">
-                                            <div class="content">
-                                                <p> Ut enim ad minim v exercitation ullamco laboris nisi aliquip ex
-                                                    ea commod consequat. Du irure dolor in reprehenderit i voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                                    sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                                    deserunt mollit anim id est laborum</p>
-                                                <p class="autor">Usuario</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card">
-                                            <div class="content">
-                                                <p> Ut enim ad minim v exercitation ullamco laboris nisi aliquip ex
-                                                    ea commod consequat. Du irure dolor in reprehenderit i voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                                    sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                                    deserunt mollit anim id est laborum</p>
-                                                <p class="autor">Usuario</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card">
-                                            <div class="content">
-                                                <p> Ut enim ad minim v exercitation ullamco laboris nisi aliquip ex
-                                                    ea commod consequat. Du irure dolor in reprehenderit i voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                                    sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                                    deserunt mollit anim id est laborum</p>
-                                                <p class="autor">Usuario</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card">
-                                            <div class="content">
-                                                <p> Ut enim ad minim v exercitation ullamco laboris nisi aliquip ex
-                                                    ea commod consequat. Du irure dolor in reprehenderit i voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                                    sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                                    deserunt mollit anim id est laborum</p>
-                                                <p class="autor">Usuario</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card">
-                                            <div class="content">
-                                                <p> Ut enim ad minim v exercitation ullamco laboris nisi aliquip ex
-                                                    ea commod consequat. Du irure dolor in reprehenderit i voluptate
-                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                                    sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                                    deserunt mollit anim id est laborum</p>
+                                                <p>Resolve desafios de maneira eficiente, contribuindo positivamente
+                                                    para a equipe</p>
                                                 <p class="autor">Usuario</p>
                                             </div>
                                         </div>
@@ -557,10 +412,12 @@
         <div class="menu-footer">
             <div class="container">
                 <div class="row">
-                    <div class="item col-sm-6 col-xl-4">
+                    <div class="item col-sm-6 col-xl-6">
                         <h2 class="tit text-uppercase">Institucional</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at lacinia est, elementum
-                            convallis ipsum. Pellentesque rhoncus hendrerit tincidunt.</p>
+                        <p>Minha missão é criar soluções frontend inovadoras, unindo criatividade e funcionalidade para
+                            superar expectativas. Comprometido com resultados de alta qualidade, busco contribuir
+                            positivamente para o desenvolvimento tecnológico.
+                        </p>
                     </div>
                     <nav class="item col-sm-6 col-xl-2">
                         <h2 id="footer-contact" class="tit text-uppercase">Contato</h2>
@@ -572,30 +429,11 @@
                     <nav class="item col-sm-6 col-xl-3">
                         <h2 id="footer-site" class="tit text-uppercase">Site</h2>
                         <ul class="two-columns" aria-labelledby="footer-site">
-                            <li><a href="#">Item 1</a></li>
-                            <li><a href="#">Item 2</a></li>
-                            <li><a href="#">Item 3</a></li>
-                            <li><a href="#">Item 4</a></li>
-                            <li><a href="#">Item 5</a></li>
-                            <li><a href="#">Item 6</a></li>
-                            <li><a href="#">Item 7</a></li>
-                            <li><a href="#">Item 8</a></li>
-                        </ul>
-                    </nav>
-                    <nav class="item col-sm-6 col-xl-3">
-                        <h2 id="footer-socials" class="tit text-uppercase">Redes Sociais</h2>
-                        <ul class="social" aria-labelledby="footer-socials">
-                            <li><a href="https://facebook.com/" title="Facebook" target="_blank" rel="noreferrer"
-                                    aria-label="Acesse nossa página no Facebook"><i
-                                        class="fab fa-facebook-square"></i></a></li>
-                            <li><a href="https://twitter.com" title="Twitter" target="_blank" rel="noreferrer"
-                                    aria-label="Acesse nosso perfil no Twitter"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="https://www.instagram.com/" title="Instagram" target="_blank" rel="noreferrer"
-                                    aria-label="Acesse nosso perfil no Instagram"><i class="fab fa-instagram"></i></a>
-                            </li>
-                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank" rel="noreferrer"
-                                    aria-label="Acesse nosso perfil no LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            </li>
+                            <li><a href="#about" class="scrollTo">SOBRE</a></li>
+                            <li><a href="#skills" class="scrollTo">HABILIDADES</a></li>
+                            <li><a href="#technologies" class="scrollTo">TECNOLOGIAS</a></li>
+                            <li><a href="#works" class="scrollTo">TRABALHOS RECENTES</a></li>
+                            <li><a href="#reviews" class="scrollTo">REVIEWS</a></li>
                         </ul>
                     </nav>
                 </div>

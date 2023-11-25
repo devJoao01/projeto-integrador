@@ -719,7 +719,7 @@ new Swiper(".swiper-gallery-structure", {
   lazy: {
     loadPrevNext: true,
   },
-  loop: false,
+  loop: true,
   navigation: {
     nextEl: "#structure-next",
     prevEl: "#structure-prev",
@@ -745,4 +745,16 @@ new Swiper(".swiper-gallery-structure", {
       slidesPerView: 4,
     },
   },
+});
+
+const links = document.querySelectorAll('nav ul li a');
+links.forEach(function(link)
+ {
+  link.addEventListener('click', function(event) {    event.preventDefault();
+    links.forEach(function(link)
+ {
+      link.classList.remove('active');
+    });
+    this.classList.add('active');
+  });
 });

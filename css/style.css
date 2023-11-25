@@ -285,6 +285,15 @@ body ::selection {
 body ::-moz-selection {
   background: rgba(0, 94, 171, 0.3);
 }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+body::-webkit-scrollbar-thumb {
+  background: #888;
+}
 
 #wrapper {
   overflow: hidden;
@@ -337,7 +346,7 @@ body ::-moz-selection {
   font-size: 28px;
   color: #005eab;
   font-weight: 700;
-  padding: 15px 0;
+  margin: 20px 0;
   text-transform: uppercase;
 }
 .title.white {
@@ -716,7 +725,7 @@ header .navbar .logo {
   transition: none;
 }
 header .navbar .logo img {
-  width: 100px;
+  width: 70px;
   height: auto;
   display: block;
   transition: none;
@@ -877,7 +886,7 @@ header.nav-small .navbar {
   padding: 10px 0;
 }
 header.nav-small .navbar .logo img {
-  width: 80px;
+  width: 40px;
 }
 
 #overlay {
@@ -1274,8 +1283,8 @@ footer .menu-footer .item .tit {
   border-bottom: 3px solid #033660;
 }
 footer .menu-footer .item ul.two-columns {
-  -moz-column-count: 2;
-       column-count: 2;
+  -moz-column-count: 1;
+       column-count: 1;
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
@@ -1418,10 +1427,12 @@ footer #k13 a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 @media (min-width: 992px) {
   #home .about .thumb {
     display: block;
+    margin-bottom: 0;
   }
 }
 #home .about .thumb img {
@@ -1438,6 +1449,12 @@ footer #k13 a:hover {
     width: 400px;
     height: 400px;
   }
+}
+#home .about .title {
+  margin: 0 0 10px;
+}
+#home .about .text {
+  line-height: 29px;
 }
 #home .technologies {
   padding: 70px 0;
@@ -1501,6 +1518,14 @@ footer #k13 a:hover {
   background-color: #efefef;
   padding: 60px 0;
 }
+#home .portfolio .row {
+  gap: 40px 0;
+}
+@media (min-width: 992px) {
+  #home .portfolio .row {
+    gap: 0;
+  }
+}
 #home .portfolio .title {
   line-height: 20px;
 }
@@ -1548,22 +1573,22 @@ footer #k13 a:hover {
   margin-left: 5px;
   font-size: 15px;
 }
-#home .rewiew .title {
+#home .review .title {
   line-height: 20px;
 }
-#home .rewiew .title span {
+#home .review .title span {
   font-size: 13px;
 }
 @media (min-width: 992px) {
-  #home .rewiew .title span {
+  #home .review .title span {
     font-size: 16px;
   }
 }
-#home .rewiew .title h2 {
+#home .review .title h2 {
   font-size: 18px;
 }
 @media (min-width: 992px) {
-  #home .rewiew .title h2 {
+  #home .review .title h2 {
     font-size: 22px;
   }
 }
@@ -3014,8 +3039,8 @@ footer #k13 a:hover {
   }
 }
 .structure {
-  margin: 90px 0 82px;
   position: relative;
+  margin: 0 0 90px;
 }
 .structure .swiper-button-container {
   position: relative;
@@ -3122,12 +3147,17 @@ footer #k13 a:hover {
   border-radius: 14px;
 }
 .structure .swiper-container .swiper-slide .card {
-  background-color: #83D7BF;
+  background-color: #005eab;
   height: 100%;
   border: none;
 }
 .structure .swiper-container .swiper-slide .card .content {
-  padding: 26px;
+  padding: 60px 26px;
+}
+@media (min-width: 992px) {
+  .structure .swiper-container .swiper-slide .card .content {
+    padding: 26px;
+  }
 }
 .structure .swiper-container .swiper-slide .card .content p {
   color: #fff;
