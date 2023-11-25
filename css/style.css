@@ -1158,10 +1158,6 @@ header.nav-small .navbar .logo img {
   color: #005eab;
 }
 
-.teste {
-  z-index: 999999;
-}
-
 .search-mobile {
   max-height: 0;
   width: 100%;
@@ -1346,6 +1342,230 @@ footer #k13 a:hover {
 }
 #home .banner .swiper-banner .swiper-slide {
   height: 500px;
+}
+#home .skills {
+  margin: 30px 0;
+}
+#home .skills .title {
+  line-height: 20px;
+}
+#home .skills .title span {
+  font-size: 13px;
+}
+@media (min-width: 992px) {
+  #home .skills .title span {
+    font-size: 16px;
+  }
+}
+#home .skills .title h2 {
+  font-size: 18px;
+}
+@media (min-width: 992px) {
+  #home .skills .title h2 {
+    font-size: 22px;
+  }
+}
+#home .skills .container .row {
+  gap: 12px 0;
+}
+#home .skills .container .row .content-skills {
+  background-color: #005eab;
+  padding: 0 26px 26px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+#home .skills .container .row .content-skills:hover {
+  border-radius: 4px;
+  background-color: #004278;
+}
+#home .skills .container .row .content-skills.card {
+  height: 100%;
+}
+#home .skills .container .row .content-skills.card .title {
+  line-height: 25px;
+}
+#home .skills .container .row .content-skills.card .title svg {
+  display: block;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 22px;
+}
+#home .skills .container .row .content-skills.card .title h2 {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: none;
+}
+@media (min-width: 992px) {
+  #home .skills .container .row .content-skills.card .title h2 {
+    font-size: 20px;
+  }
+}
+#home .skills .container .row .content-skills.card .text {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 22px;
+}
+@media (min-width: 992px) {
+  #home .skills .container .row .content-skills.card .text {
+    font-size: 14px;
+  }
+}
+#home .about {
+  background-color: #efefef;
+  padding: 60px 0;
+}
+#home .about .thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  #home .about .thumb {
+    display: block;
+  }
+}
+#home .about .thumb img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (min-width: 992px) {
+  #home .about .thumb img {
+    width: 400px;
+    height: 400px;
+  }
+}
+#home .technologies {
+  padding: 70px 0;
+}
+#home .technologies .row {
+  gap: 20px 0;
+}
+@media (min-width: 992px) {
+  #home .technologies .row {
+    gap: 20px 0;
+  }
+}
+#home .technologies .row .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#home .technologies .row .item:hover {
+  box-shadow: inset 0 0 6px #dcdcdc;
+  border-radius: 3px;
+  background-color: #efefef;
+}
+#home .technologies .row .item:hover .icon {
+  background-color: #004278;
+}
+@media (min-width: 992px) {
+  #home .technologies .row .item:hover .icon {
+    transform: scale(0.999) translate3d(0, -5px, 0);
+  }
+}
+#home .technologies .row .item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #005eab;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 992px) {
+  #home .technologies .row .item .icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+#home .technologies .row .item .icon svg {
+  font-size: 50px;
+  color: #ffffff;
+}
+@media (min-width: 992px) {
+  #home .technologies .row .item .icon svg {
+    font-size: 50px;
+  }
+}
+#home .portfolio {
+  background-color: #efefef;
+  padding: 60px 0;
+}
+#home .portfolio .title {
+  line-height: 20px;
+}
+#home .portfolio .title span {
+  font-size: 13px;
+}
+@media (min-width: 992px) {
+  #home .portfolio .title span {
+    font-size: 16px;
+  }
+}
+#home .portfolio .title h2 {
+  font-size: 18px;
+}
+@media (min-width: 992px) {
+  #home .portfolio .title h2 {
+    font-size: 22px;
+  }
+}
+#home .portfolio .card .card-thumb {
+  height: 400px;
+}
+#home .portfolio .card .card-thumb iframe {
+  height: 100%;
+  width: 100%;
+}
+#home .portfolio .card .card-body .content-iframe .title h2 {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  #home .portfolio .card .card-body .content-iframe .title h2 {
+    font-size: 18px;
+  }
+}
+#home .portfolio .card .card-body .visit {
+  margin-top: 20px;
+}
+#home .portfolio .card .card-body .visit a {
+  color: #000;
+  font-weight: 700;
+}
+#home .portfolio .card .card-body .visit a svg {
+  margin-left: 5px;
+  font-size: 15px;
+}
+#home .rewiew .title {
+  line-height: 20px;
+}
+#home .rewiew .title span {
+  font-size: 13px;
+}
+@media (min-width: 992px) {
+  #home .rewiew .title span {
+    font-size: 16px;
+  }
+}
+#home .rewiew .title h2 {
+  font-size: 18px;
+}
+@media (min-width: 992px) {
+  #home .rewiew .title h2 {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -2791,5 +3011,195 @@ footer #k13 a:hover {
   #search .head h1 {
     font-size: 30px;
     line-height: 30px;
+  }
+}
+.structure {
+  margin: 90px 0 82px;
+  position: relative;
+}
+.structure .swiper-button-container {
+  position: relative;
+}
+.structure .swiper-button-container.swiper-center .swiper-button-prev, .structure .swiper-button-container.swiper-center .swiper-button-next {
+  top: 80px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.structure .swiper-button-container.btn-top .swiper-button-prev, .structure .swiper-button-container.btn-top .swiper-button-next {
+  top: -30px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.structure .swiper-button-container.btn-top .swiper-button-prev::after, .structure .swiper-button-container.btn-top .swiper-button-next::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: none;
+}
+.structure .swiper-button-container.btn-top .swiper-button-prev svg, .structure .swiper-button-container.btn-top .swiper-button-next svg {
+  display: block;
+  color: #000;
+  font-size: 25px;
+}
+.structure .swiper-button-container.btn-top .swiper-button-prev {
+  right: 30px;
+  left: inherit;
+}
+@media (min-width: 992px) {
+  .structure .swiper-button-container.btn-top .swiper-button-prev {
+    right: 50px;
+  }
+}
+.structure .swiper-button-container.btn-top .swiper-button-prev::after {
+  content: "\f104";
+}
+.structure .swiper-button-container.btn-top .swiper-button-next {
+  right: 0px;
+}
+.structure .swiper-button-container.btn-top .swiper-button-next::after {
+  content: "\f105";
+}
+.structure .swiper-button-container .swiper-button-prev, .structure .swiper-button-container .swiper-button-next {
+  top: 200px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.structure .swiper-button-container .swiper-button-prev:hover, .structure .swiper-button-container .swiper-button-next:hover {
+  background-color: rgba(70, 70, 70, 0.1);
+  transition: 0.3s all ease;
+}
+.structure .swiper-button-container .swiper-button-prev::after, .structure .swiper-button-container .swiper-button-next::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: none;
+}
+.structure .swiper-button-container .swiper-button-prev svg, .structure .swiper-button-container .swiper-button-next svg {
+  display: block;
+  color: #000;
+  font-size: 25px;
+}
+.structure .swiper-button-container .swiper-button-prev {
+  left: -33px;
+}
+@media (min-width: 992px) {
+  .structure .swiper-button-container .swiper-button-prev {
+    left: -50px;
+  }
+}
+.structure .swiper-button-container .swiper-button-prev::after {
+  content: "\f104";
+}
+.structure .swiper-button-container .swiper-button-next {
+  right: -33px;
+}
+@media (min-width: 992px) {
+  .structure .swiper-button-container .swiper-button-next {
+    right: -50px;
+  }
+}
+.structure .swiper-button-container .swiper-button-next::after {
+  content: "\f105";
+}
+.structure .swiper-container {
+  overflow: hidden;
+}
+.structure .swiper-container .swiper-slide {
+  padding: 0;
+  overflow: hidden;
+  visibility: visible;
+  position: relative;
+  height: auto;
+}
+.structure .swiper-container .swiper-slide img {
+  transition: all 0.35s ease;
+  border-radius: 14px;
+}
+.structure .swiper-container .swiper-slide .card {
+  background-color: #83D7BF;
+  height: 100%;
+  border: none;
+}
+.structure .swiper-container .swiper-slide .card .content {
+  padding: 26px;
+}
+.structure .swiper-container .swiper-slide .card .content p {
+  color: #fff;
+  line-height: 12px;
+  font-size: 12px;
+}
+@media (min-width: 992px) {
+  .structure .swiper-container .swiper-slide .card .content p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.structure .swiper-container .swiper-slide .card .content .autor {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 11px;
+}
+@media (min-width: 992px) {
+  .structure .swiper-container .swiper-slide .card .content .autor {
+    font-size: 17px;
+    margin-top: 17px;
+  }
+}
+.structure .swiper-pagination {
+  left: 50%;
+  bottom: -60px;
+  width: -moz-max-content;
+  width: max-content;
+  transform: translateX(-50%);
+}
+.structure .swiper-pagination-bullet {
+  background-color: transparent;
+  height: 32px;
+  margin: 0 !important;
+  opacity: 1;
+  width: 32px;
+  position: relative;
+}
+.structure .swiper-pagination-bullet:before {
+  position: absolute;
+  content: "";
+  border: 4px solid #005eab;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease;
+}
+.structure .swiper-pagination-bullet-active:before {
+  background-color: #005eab;
+}
+
+@media (max-width: 991.98px) {
+  .about .img-thumb {
+    order: 2;
+  }
+  .about .info {
+    order: 1;
+  }
+  .about .info .title .tit {
+    padding-top: 66px;
+  }
+  .about .trajectory .title .tit::after {
+    content: "";
+    top: 155px;
+    left: 5px;
+    z-index: 1;
+  }
+  .about .guides .title {
+    margin-bottom: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

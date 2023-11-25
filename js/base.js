@@ -219,35 +219,35 @@ document.querySelectorAll(".tel-mask").forEach((e) => {
 //--Forms Validation------------------------------------------------------------------------------//
 
 // eslint-disable-next-line
-new Bouncer("[data-validate]", {
-  messages: {
-    missingValue: {
-      checkbox: "Este campo é obrigatório.",
-      radio: "Por favor selecione uma opção.",
-      select: "Por favor selecione uma opção.",
-      "select-multiple": "Por favor selecione ao menos uma opção.",
-      default: "Por favor preencha este campo.",
-    },
-    patternMismatch: {
-      email: "Por favor insira um email válido.",
-      url: "Por favor entre uma URL válida.",
-      number: "Por favor entre um número.",
-      color: "Por favor entre com o seguinte formato: #rrggbb",
-      date: "Por favor entre a data no formato DD-MM-YYYY.",
-      time: "Por favor use o formato de 24 horas. Ex.: 23:00",
-      month: "Por favor entre o formato MM-YY",
-      default: "Por favor preencha o campo no formato requerido.",
-    },
-    outOfRange: {
-      over: "Por favor selecione um valor abaixo de {max}.",
-      under: "Por favor selecione um valor acima de {min}.",
-    },
-    wrongLength: {
-      over: "O texo não pode passar de {maxLength} caracteres.",
-      under: "O texo precisa ter no mínimo {minLength} caracteres.",
-    },
-  },
-});
+// new Bouncer("[data-validate]", {
+//   messages: {
+//     missingValue: {
+//       checkbox: "Este campo é obrigatório.",
+//       radio: "Por favor selecione uma opção.",
+//       select: "Por favor selecione uma opção.",
+//       "select-multiple": "Por favor selecione ao menos uma opção.",
+//       default: "Por favor preencha este campo.",
+//     },
+//     patternMismatch: {
+//       email: "Por favor insira um email válido.",
+//       url: "Por favor entre uma URL válida.",
+//       number: "Por favor entre um número.",
+//       color: "Por favor entre com o seguinte formato: #rrggbb",
+//       date: "Por favor entre a data no formato DD-MM-YYYY.",
+//       time: "Por favor use o formato de 24 horas. Ex.: 23:00",
+//       month: "Por favor entre o formato MM-YY",
+//       default: "Por favor preencha o campo no formato requerido.",
+//     },
+//     outOfRange: {
+//       over: "Por favor selecione um valor abaixo de {max}.",
+//       under: "Por favor selecione um valor acima de {min}.",
+//     },
+//     wrongLength: {
+//       over: "O texo não pode passar de {maxLength} caracteres.",
+//       under: "O texo precisa ter no mínimo {minLength} caracteres.",
+//     },
+//   },
+// });
 
 //--Checkin and Checkout validation---------------------------------------------------------------//
 
@@ -713,3 +713,36 @@ window.addEventListener(
   },
   true
 );
+
+
+new Swiper(".swiper-gallery-structure", {
+  lazy: {
+    loadPrevNext: true,
+  },
+  loop: false,
+  navigation: {
+    nextEl: "#structure-next",
+    prevEl: "#structure-prev",
+  },
+  pagination: {
+    el: "#structure-pagination",
+    clickable: false,
+  },
+  speed: 500,
+  spaceBetween: 24,
+  slideToClickedSlide: false,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
